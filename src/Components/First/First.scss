@@ -3,4 +3,107 @@
     color: #102770;
     height: 100vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    p{
+        background-color: inherit;
+        color: #102770;
+    }
+}
+.card {
+    width:440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: inherit;
+    justify-content: center;
+    
+    &__buttons{
+        position: relative;
+        width:50%;
+        background-color: #102770;
+        border-radius: 2px;
+        height:40px;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        .active{
+            width:48%;
+            height: 90%; 
+            border-radius: 2px;
+            z-index: 1;
+            position: absolute;
+            background-color: #ffeba7;
+            color:#102770;
+            transition: 0.3s ease-in-out;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .left{
+            transform: translateX(-50%);
+        }
+        .right{
+            transform: translateX(50%);
+        }
+    }
+
+    &__content{
+        margin:5rem auto;
+        background-color: white;
+        width: 70%;
+        height: 500px;
+        border-radius: 5px;
+        box-shadow: 0 12px 35px 0 rgba(16, 39, 112,.07);
+        position: relative;
+        overflow: visible;
+    }
+    
+    .img-wrapper-1{
+        background-color: transparent;
+        position:absolute;
+        top:-14%;
+        left:-20%;
+        width:80%;    
+        img{
+            width:100%;
+            background-color: transparent;
+        }
+    }
+    .img-wrapper-2{
+        width:100%;
+        border-radius: 2px;
+        background-color: transparent;
+        img{
+            width:100%;
+            background-color: transparent;
+        }
+    }
+    .img-wrapper-3{
+        width:100%;
+        border-radius: 2px;
+        position:absolute;
+        top:-14%;
+        right:-30%;
+        background-color: transparent;
+        img{
+            width:100%;
+            background-color: transparent;
+        }
+    }
+   
+    button{
+        width: 48%;
+        font-weight: 700;
+        height: 90%;
+        background-color: inherit;
+        border-radius:2px ;
+        cursor: pointer;
+        border:none;
+        color:#ffeba7;
+    }
 }
