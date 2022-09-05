@@ -2,14 +2,12 @@
 $big: 890px;
 
 .home{
-   
     height:100vh;
     width:100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-   
 }
 .header{
     font-size: 1.5rem;
@@ -35,11 +33,12 @@ $big: 890px;
 .body{
     width: 80%;
     font-size: 3rem;
-    margin: 5rem auto;
+    margin: 2rem auto;
     border:1px dotted #dbc6a2;
-    
+    text-align: center;
+    padding: 1rem;
     h5{
-        font-size: 2rem;
+        font-size: 1.8rem;
         @media screen and (min-width: $big) {
             margin: 2rem auto;
             text-align: center;
