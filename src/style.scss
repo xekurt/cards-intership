@@ -1,19 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
 
-*{
-  font-family: 'Poppins', sans-serif;
+* {
+  font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color:#35383C;
-  color:  #C7A262;
-  transform-style: preserve-3d;
+  background-color: #35383c;
+  color: #c7a262;
 }
 html {
   scroll-behavior: smooth;
-  
 }
-body{
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -21,6 +19,5 @@ body{
 
 a {
   text-decoration: none;
-  color:inherit
+  color: inherit;
 }
- 
