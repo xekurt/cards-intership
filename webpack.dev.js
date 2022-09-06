@@ -3,6 +3,10 @@ const htmlPlugin = new HtmlWebPackPlugin({
   template: "./src/index.html",
   filename: "./index.html",
 });
+
+const { merge } = require("webpack-merge");
+const common = require("./webpack.common.js");
+
 module.exports = {
   mode: "development",
   module: {
