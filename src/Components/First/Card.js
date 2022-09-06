@@ -4,6 +4,9 @@ import treeRight from "../../assets/images/treeRight.png";
 import treeTop from "../../assets/images/treeTop.png";
 import rock from "../../assets/images/rock.png";
 import Location from "../../assets/icons/location.png";
+import sea from "../../assets/images/sea.png";
+import rock2 from "../../assets/images/rock2.png";
+import boat from "../../assets/images/boat.png";
 
 import "./First.scss";
 const Card = () => {
@@ -28,16 +31,32 @@ const Card = () => {
 
       <div className="card__content">
         <div className="card__images">
-          <div className="img-wrapper-2">
+          <div
+            className={`img-wrapper-2 disable ${
+              active === "CAMPING" && "reveal"
+            }`}
+          >
             <img src={treeTop} alt="treeTop" />
           </div>
-          <div className="img-wrapper-1">
+          <div
+            className={`img-wrapper-1 disable ${
+              active === "CAMPING" && "reveal"
+            }`}
+          >
             <img src={camp} alt="camp" />
           </div>
-          <div className="img-wrapper-3">
+          <div
+            className={`img-wrapper-3 disable ${
+              active === "CAMPING" && "reveal"
+            }`}
+          >
             <img src={treeRight} alt="treeRight" />
           </div>
-          <div className="img-wrapper-4">
+          <div
+            className={`img-wrapper-4 disable ${
+              active === "CAMPING" && "reveal"
+            }`}
+          >
             <img src={rock} alt="rock" />
           </div>
         </div>
@@ -58,6 +77,45 @@ const Card = () => {
           <button className="date-button">Choose Date</button>
         </div>
       </div>
+
+      {/* <div className="card__content ">
+        <div className="card__images">
+          <div className="img-wrapper-2">
+            <img src={sea} alt="treeTop" />
+          </div>
+          <div
+            className={`img-wrapper-5 disable ${
+              active === "KAYAKING" && "reveal"
+            }`}
+          >
+            <img src={boat} alt="camp" />
+          </div>
+
+          <div
+            className={`img-wrapper-4 disable ${
+              active === "KAYAKING" && "reveal"
+            }`}
+          >
+            <img src={rock2} alt="rock" />
+          </div>
+        </div>
+        <div className="card__buble__container">
+          <div className="buble2"></div>
+          <p>Camping</p>
+        </div>
+        <div className="card__data">
+          <h5>
+            <span className="dollar-sign">$</span>
+            39 / 4 <span>hrs</span>
+          </h5>
+          <p>per person</p>
+          <div className="location">
+            <img src={Location} alt="location" className="location__icon" />
+            <p>Drina , Serbia</p>
+          </div>
+          <button className="date-button-alt">Choose Date</button>
+        </div>
+      </div> */}
     </div>
   );
 };

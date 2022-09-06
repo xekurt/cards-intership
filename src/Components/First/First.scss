@@ -64,6 +64,7 @@
     }
 
     &__content{
+        
         margin:5rem auto;
         background-color: white;
         width: 70%;
@@ -108,10 +109,10 @@
             }
         }
         .img-wrapper-4{
-            width:40%;
+            width:33%;
             border-radius: 2px;
             position:absolute;
-            bottom:-10%;
+            bottom:-15%;
             right:-10%;
             background-color: transparent;
             img{
@@ -119,6 +120,18 @@
                 background-color: transparent;
             }
         }
+        .img-wrapper-5{
+            background-color: transparent;
+            position:absolute;
+            top:-10%;
+            left:-25%;
+            width:120%;    
+            img{
+                width:100%;
+                background-color: transparent;
+            }
+        }
+        
     }
     &__buble__container{
         background-color: transparent;
@@ -131,6 +144,15 @@
             width:80px;
             height:80px;
             background-color: #4f772d;
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            animation: animate 5s ease-in-out infinite;
+            box-shadow: 0 12px 35px 0 rgba(16, 39, 112,.07);
+        }
+        .buble2{
+            width:80px;
+            height:80px;
+            background: linear-gradient(217deg, #448ad5, #b8eaf9);
+            box-shadow: 0 6px 20px 0 rgb(16 39 112 / 30%);
             border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
             animation: animate 5s ease-in-out infinite;
             box-shadow: 0 12px 35px 0 rgba(16, 39, 112,.07);
@@ -162,6 +184,22 @@
                 color:#132a13;
             }
         }
+        .date-button-alt{
+            width:120px;
+            height:40px;
+            margin:1rem auto;
+            border-radius: 5px;
+            font-weight: 600;
+            border:none;
+            background-color: #102770;
+            color:#ffeba7;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            &:hover{
+                background-color: #ffeba7;
+                color:#132a13;
+            }
+        }
         h5{
             position: relative;
             font-weight: 400;
@@ -182,6 +220,8 @@
         }
         
     }
+    
+    
     .location{
         color:#132a13;
         margin:1rem auto;
@@ -192,6 +232,13 @@
         }
     }
     
+    .disable{
+        opacity: 0;
+        transition: 0.4s ease-in-out;
+    }
+    .reveal{
+        opacity: 1;
+    }
     
 }
 
