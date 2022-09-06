@@ -16,8 +16,8 @@ const Card = () => {
     setActive(id);
   };
   return (
-    <div className="card">
-      <div className="card__buttons">
+    <div className="card-area">
+      <div className="card-area__buttons">
         <div className={`active ${active === "KAYAKING" ? "left" : "right"}`}>
           {active}
         </div>
@@ -29,8 +29,8 @@ const Card = () => {
         </button>
       </div>
 
-      <div className="card__content">
-        <div className="card__images">
+      <div className="back">
+        <div className="back__images">
           <div
             className={`img-wrapper-2 disable ${
               active === "CAMPING" && "reveal"
@@ -60,11 +60,11 @@ const Card = () => {
             <img src={rock} alt="rock" />
           </div>
         </div>
-        <div className="card__buble__container">
+        <div className="back__buble__container">
           <div className="buble"></div>
           <p>Camping</p>
         </div>
-        <div className="card__data">
+        <div className="back__data">
           <h5>
             <span className="dollar-sign">$</span>
             29 / 8 <span>hrs</span>
@@ -78,8 +78,8 @@ const Card = () => {
         </div>
       </div>
 
-      {/* <div className="card__content ">
-        <div className="card__images">
+      <div className="front">
+        <div className="front__images">
           <div className="img-wrapper-2">
             <img src={sea} alt="treeTop" />
           </div>
@@ -99,11 +99,11 @@ const Card = () => {
             <img src={rock2} alt="rock" />
           </div>
         </div>
-        <div className="card__buble__container">
+        <div className="front__buble__container">
           <div className="buble2"></div>
           <p>Camping</p>
         </div>
-        <div className="card__data">
+        <div className="front__data">
           <h5>
             <span className="dollar-sign">$</span>
             39 / 4 <span>hrs</span>
@@ -115,7 +115,7 @@ const Card = () => {
           </div>
           <button className="date-button-alt">Choose Date</button>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

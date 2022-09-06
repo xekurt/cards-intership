@@ -7,15 +7,16 @@
   box-sizing: border-box;
   background-color:#35383C;
   color:  #C7A262;
-  overflow-x:hidden ;
+  transform-style: preserve-3d;
 }
 html {
   scroll-behavior: smooth;
+  
 }
 body{
   margin: 0;
   padding: 0;
-  
+  overflow-x: hidden;
 }
 
 a {
