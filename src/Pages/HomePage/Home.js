@@ -14,16 +14,10 @@ const Home = () => {
         </div>
       </header>
       <article className="body">
-        <h5>Please select a card </h5>
+        <h5>Please select card or scroll to bottom </h5>
         <ul>
           <li>
-            <a href="#first"> First card </a>
-          </li>
-          <li>
-            <a href="#second">Second card </a>
-          </li>
-          <li>
-            <a href="#Third"> Third card</a>
+            <a href="#first"> Pricing card </a>
           </li>
         </ul>
       </article>
