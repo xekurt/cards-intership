@@ -9,6 +9,7 @@ import rock2 from "../../assets/images/rock2.png";
 import boat from "../../assets/images/boat.png";
 
 import "./First.scss";
+
 const Card = () => {
   const [active, setActive] = useState("KAYAKING");
   const handleChangeActive = (e) => {

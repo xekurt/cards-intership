@@ -19,8 +19,20 @@ module.exports = {
         },
       },
       {
-        test: /\.(s(a|c)ss)$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        test: /\.s[ac]ss$/i,
+        use: [
+          "style-loader",
+          "css-loader",
+          {
+            loader: "sass-loader",
+            options: {
+              implementation: require("sass"),
+              sassOptions: {
+                fiber: false,
+              },
+            },
+          },
+        ],
       },
       {
         test: /\.(png|jpe?g|gif)$/i,

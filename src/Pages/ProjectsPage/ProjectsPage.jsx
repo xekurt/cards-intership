@@ -1,6 +1,7 @@
 import React from "react";
 import First from "../../Components/First/First";
-import "./projects.scss";
+import "./Projects.scss";
+
 const ProjectsPage = () => {
   return (
     <>
